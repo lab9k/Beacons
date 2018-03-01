@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Beacons</string>
+    <string name="get_location">GET LOCATION</string>
+    <string name="verdiep3">3</string>
+    <string name="verdiep2">2</string>
+    <string name="verdiep1">1</string>
+    <string name="verdiep0">0</string>
+    <string name="verdiepIngang">Ingang</string>
+    <string name="verdiepIngangInfo">Welkom in de bib!</string>
+    <string name="verdiepMin1">-1</string>
+    <string name="verdiepMin2">-2</string>
+    <string name="verdiep3Info">Leeszaal, magazijn, kantoren, kranten en weekbladen</string>
+    <string name="verdiep2Info">Non-fictie</string>
+    <string name="verdiep1Info">Fictie, muziek, film, taal, strips</string>
+    <string name="verdiep0Info">Agora, inname en zelfuitleen, reserveringen </string>
+    <string name="verdiepMin1Info">Zelfuitleen</string>
+    <string name="verdiepMin2Info">ZelfUitleen</string>
+
+    <string-array name="verdiepMin2">
+        <item>JONGERENBIBLIOTHEEK</item>
+        <item>@string/verdiepMin2Info</item>
+        <item>LABO'S</item>
+        <item>Ugent, imec</item>
+    </string-array>
+
+    <string-array name="verdiepMin1">
+        <item>KINDERBIBLIOTHEEK</item>
+        <item>@string/verdiepMin1Info</item>
+        <item>INFO en ONTHAAL</item>
+        <item>ZAAL De Blauwe Vogel, Vos, Haas</item>
+        <item>Urgent fm, imec</item>
+    </string-array>
+
+    <string-array name="verdiep0">
+        <item>BIBLIOTHEEK</item>
+        <item>@string/verdiep0Info</item>
+        <item>KROOKCAFE</item>
+    </string-array>
+
+    <string-array name="verdiep1">
+        <item>BIBLIOTHEEK</item>
+        <item>@string/verdiep1Info</item>
+        <item>ZAAL De laatkomer, De twistappel</item>
+        <item>DE TRAP VAN STEEN EN WOLKEN</item>
+    </string-array>
+
+    <string-array name="verdiep2">
+        <item>BIBLIOTHEEK</item>
+        <item>@string/verdiep2Info</item>
+        <item>DIGITAAL TALENT PUNT</item>
+        <item>ADVIESPUNT De Stap/TOPunt, Wetswinkel</item>
+        <item>ZAAL Vergeten Straat</item>
+        <item>ZAAL De Verwondering (Digilab)</item>
+    </string-array>
+
+    <string-array name="verdiep3">
+        <item>BIBLIOTHEEK</item>
+        <item>@string/verdiep3Info</item>
+    </string-array>
+
+</resources>
