@@ -4,12 +4,16 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +23,12 @@ import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.BeaconParser;
 import org.altbeacon.beacon.RangeNotifier;
 import org.altbeacon.beacon.Region;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -49,9 +58,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
         setTitle("Beacons in De Krook");
 
         //iBeacon layout nr
-        beaconManager.getBeaconParsers().add(new BeaconParser()
-                .setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
-
+        beaconManager.getBeaconParsers().add(new BeaconParser().setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
 
         textVerdiep = (TextView) findViewById(R.id.text_verdiep);
         textVerdiepInfo = (LinearLayout) findViewById(R.id.text_verdiep_info);
@@ -73,7 +80,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
             builder.show();
         }
 
-
         beaconManager.bind(this);
     }
 
@@ -89,6 +95,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
             @Override
             public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
                 if (beacons.size() > 0) {
+
                     //Collection beacons omzetten naar List om te kunnen sorteren op distance
                     final List<Beacon> beaconsList = new ArrayList<>(beacons);
 
@@ -124,6 +131,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
                                     Toast.LENGTH_LONG).show();
                         }
                     });
+
                 }
             }
         });
@@ -135,46 +143,18 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
     }
 
     private void initVerdiepen() {
-        // Verdiep -2
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354410e", -2));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354410d", -2));
-
-        // Verdiep -1
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f43544126", -1));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f43544123", -1));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f43544128", -1));
-
-        // Verdiep 0
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354414a", 0));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354416b", 0));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354415c", 0));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354415d", 0));
-
-        // Verdiep 1
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354419e", 1));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354417f", 1));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f43544175", 1));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f43544176", 1));
-
-        //Ingang
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f4354415f", 0));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f43544161", 0));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f43544160", 0));
-
-        // Verdiep 2
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f435441cc", 2));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f435441b3", 2));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f435441ae", 2));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f435441b8", 2));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f435441b7", 2));
-
-        // Verdiep 3
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f435441e5", 3));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f435441da", 3));
-        verdiepen.add(new Verdiep("e2c56db5-dffb-48d2-b060-d04f435441d9", 3));
-
-        for (Verdiep v : verdiepen) {
-            verdiepIds.add(v.getId());
+        try {
+            JSONObject obj = new JSONObject(loadJSONFromAsset("beaconsVerdiepen.json"));
+            JSONArray beaconsArray = obj.getJSONArray("beaconsVerdiepen");
+            for (int i = 0; i < beaconsArray.length(); i++) {
+                JSONObject jsonObject = beaconsArray.getJSONObject(i);
+                String uuid = jsonObject.getString("uuid");
+                int verdiep = jsonObject.getInt("verdiep");
+                verdiepen.add(new Verdiep(uuid, verdiep));
+                verdiepIds.add(uuid);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
     }
 
@@ -290,5 +270,21 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
                 return;
             }
         }
+    }
+
+    public String loadJSONFromAsset(String filename) {
+        String json = null;
+        try {
+            InputStream is = getAssets().open(filename);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
     }
 }
