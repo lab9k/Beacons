@@ -8,5 +8,8 @@ De applicatie duidt per verdieping aan welke beacons er hangen. Doormiddel van e
 
 De lijst geeft het UUID en het OCTA-ID van de beacons weer. Op deze manier zijn de beacons makkelijk terug te vinden op de plattegrond van de bibliotheek. 
 
+Je kan de lijsten exporteren naar een excel bestand, per verdiep of alle verdiepen samen.
+
+![BeaconsListScreenshotExporteren](https://i.imgur.com/d6ukje9m.png) ![BeaconsListScreenshotExcel](https://i.imgur.com/aE17o4rm.png)
 
 [APK](https://github.com/lab9k/Beacons/tree/master/Android/BeaconsList/app-debug.apk)
