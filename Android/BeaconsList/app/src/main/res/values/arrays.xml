@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choose_array">
+        <item>Verdiep -2</item>
+        <item>Verdiep -1</item>
+        <item>Verdiep 0</item>
+        <item>Verdiep 1</item>
+        <item>Verdiep 2</item>
+        <item>Verdiep 3</item>
+        <item>Alle verdiepen</item>
+    </string-array>
+</resources>
