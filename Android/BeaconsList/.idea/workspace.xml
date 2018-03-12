@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfa1ec8-e3f7-4ddd-a7ba-73c15b0f0fad" name="Default" comment="">
+    <list default="true" id="1bfa1ec8-e3f7-4ddd-a7ba-73c15b0f0fad" name="Default" comment="Werkende beacons exporteren naar excel">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/jxl.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/__local_aars____Users_lottejespers_Documenten_Stage_Beacons_Android_BeaconsList_app_libs_jxl_jar_unspecified_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app-debug.apk" afterPath="$PROJECT_DIR$/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BeaconsList.md" afterPath="$PROJECT_DIR$/../BeaconsList.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json" afterPath="$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BeaconsVerdiepTest/app/build.gradle" afterPath="$PROJECT_DIR$/../BeaconsVerdiepTest/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BeaconsVerdiepTest/app/src/main/java/com/example/android/beacons/MainActivity.java" afterPath="$PROJECT_DIR$/../BeaconsVerdiepTest/app/src/main/java/com/example/android/beacons/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BeaconsVerdiepTest/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../BeaconsVerdiepTest/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,33 +57,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="159" column="77" lean-forward="false" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="77" />
+            <state relative-caret-position="707">
+              <caret line="148" column="79" lean-forward="true" selection-start-line="148" selection-start-column="79" selection-end-line="148" selection-end-column="79" />
               <folding>
-                <element signature="e#3799#4027#0" expanded="true" />
-                <element signature="e#4026#4027#0" expanded="true" />
+                <element signature="e#4505#4733#0" expanded="true" />
+                <element signature="e#4732#4733#0" expanded="true" />
+                <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#6720#7213#0" expanded="true" />
+                <element signature="e#7212#7213#0" expanded="true" />
+                <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#8289#8290#0" expanded="true" />
+                <element signature="e#8327#8328#0" expanded="true" />
+                <element signature="e#8371#8372#0" expanded="true" />
+                <element signature="e#8414#8415#0" expanded="true" />
+                <element signature="e#8467#8468#0" expanded="true" />
+                <element signature="e#8510#8511#0" expanded="true" />
+                <element signature="e#8560#8561#0" expanded="true" />
+                <element signature="e#8600#8601#0" expanded="true" />
+                <element signature="e#8650#8651#0" expanded="true" />
+                <element signature="e#8690#8691#0" expanded="true" />
+                <element signature="e#8740#8741#0" expanded="true" />
+                <element signature="e#8780#8781#0" expanded="true" />
+                <element signature="e#8830#8831#0" expanded="true" />
+                <element signature="e#8870#8871#0" expanded="true" />
+                <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+                <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#11264#11265#0" expanded="true" />
+                <element signature="e#11302#11303#0" expanded="true" />
+                <element signature="e#11369#11370#0" expanded="true" />
+                <element signature="e#11427#11428#0" expanded="true" />
+                <element signature="e#11478#11479#0" expanded="true" />
+                <element signature="e#11529#11530#0" expanded="true" />
+                <element signature="e#11763#11764#0" expanded="true" />
+                <element signature="e#11826#11827#0" expanded="true" />
+                <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#16599#17562#0" expanded="true" />
+                <element signature="e#17561#17562#0" expanded="true" />
+                <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#18238#18253#0" expanded="true" />
+                <element signature="e#18311#19883#0" expanded="true" />
+                <element signature="e#19882#19883#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>snack</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -1787,7 +1848,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/xml/provider_paths.xml" />
         <option value="$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java" />
       </list>
     </option>
@@ -1825,17 +1892,182 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beaconlist" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beaconlist" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beaconlist" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeaconsList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="3300aac48e508243" />
     <property name="FullScreen" value="true" />
+    <property name="android.profiler.active" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/libs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1920,7 +2152,55 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520850095982" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520867177579" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+      </Profilers>
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520867177579" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1935,6 +2215,89 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BeaconsList" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
       <method />
     </configuration>
@@ -2020,7 +2383,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520850095983" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520867177581" />
       </method>
     </configuration>
     <list size="1">
@@ -2060,7 +2423,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2070,10 +2432,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6687345" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7444169" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2083,15 +2446,38 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3995037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6687345" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3995037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2099,7 +2485,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2109,8 +2495,47 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3799#4027#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2120,8 +2545,47 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3799#4027#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2131,8 +2595,47 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3799#4027#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2156,8 +2659,47 @@
         <state relative-caret-position="651">
           <caret line="127" column="0" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="127" selection-end-column="0" />
           <folding>
-            <element signature="e#3799#4027#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2167,8 +2709,47 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3799#4027#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2192,8 +2773,47 @@
         <state relative-caret-position="172">
           <caret line="159" column="77" lean-forward="false" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="77" />
           <folding>
-            <element signature="e#3799#4027#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2203,6 +2823,890 @@
         <state relative-caret-position="282">
           <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/content/DialogInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="138" column="77" lean-forward="false" selection-start-line="138" selection-start-column="77" selection-end-line="138" selection-end-column="77" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/content/DialogInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="127" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/content/DialogInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="787">
+          <caret line="159" column="77" lean-forward="false" selection-start-line="159" selection-start-column="77" selection-end-line="159" selection-end-column="77" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/content/DialogInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="127" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/content/DialogInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep1Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/adapters/BeaconAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="67" column="51" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/content/Intent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="9498" column="0" lean-forward="false" selection-start-line="9498" selection-start-column="0" selection-end-line="9498" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/provider_paths.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="148" column="79" lean-forward="true" selection-start-line="148" selection-start-column="79" selection-end-line="148" selection-end-column="79" />
+          <folding>
+            <element signature="e#4505#4733#0" expanded="true" />
+            <element signature="e#4732#4733#0" expanded="true" />
+            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#6720#7213#0" expanded="true" />
+            <element signature="e#7212#7213#0" expanded="true" />
+            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#8327#8328#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8414#8415#0" expanded="true" />
+            <element signature="e#8467#8468#0" expanded="true" />
+            <element signature="e#8510#8511#0" expanded="true" />
+            <element signature="e#8560#8561#0" expanded="true" />
+            <element signature="e#8600#8601#0" expanded="true" />
+            <element signature="e#8650#8651#0" expanded="true" />
+            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#8740#8741#0" expanded="true" />
+            <element signature="e#8780#8781#0" expanded="true" />
+            <element signature="e#8830#8831#0" expanded="true" />
+            <element signature="e#8870#8871#0" expanded="true" />
+            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
+            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#11264#11265#0" expanded="true" />
+            <element signature="e#11302#11303#0" expanded="true" />
+            <element signature="e#11369#11370#0" expanded="true" />
+            <element signature="e#11427#11428#0" expanded="true" />
+            <element signature="e#11478#11479#0" expanded="true" />
+            <element signature="e#11529#11530#0" expanded="true" />
+            <element signature="e#11763#11764#0" expanded="true" />
+            <element signature="e#11826#11827#0" expanded="true" />
+            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#16599#17562#0" expanded="true" />
+            <element signature="e#17561#17562#0" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#18238#18253#0" expanded="true" />
+            <element signature="e#18311#19883#0" expanded="true" />
+            <element signature="e#19882#19883#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
