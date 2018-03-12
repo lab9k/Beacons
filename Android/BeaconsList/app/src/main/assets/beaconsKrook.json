@@ -1,5 +1,11 @@
 {
   "beaconsKrook": [
+    //test beacon in nest
+//        {
+//          "verdieping": "-2",
+//          "octaid": "0",
+//          "beaconid": "e2c56db5-dffb-48d2-b060-d04f435441f9"
+//        },
     {
       "verdieping": "-2",
       "octaid": "0",
