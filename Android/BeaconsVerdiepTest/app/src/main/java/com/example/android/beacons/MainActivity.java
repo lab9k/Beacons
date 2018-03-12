@@ -2,15 +2,19 @@ package com.example.android.beacons;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothAdapter;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -48,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
     private List<Verdiep> verdiepen = new ArrayList<>();
     private List<String> verdiepIds = new ArrayList<>();
     private int currentVerdiep;
+    private Snackbar snackbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,20 +71,42 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
         // Beacons die de verdiepen bepalen initialiseren
         initVerdiepen();
 
-        // Android Permission check
-        if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("This app needs location access");
-            builder.setMessage("Please grant location access so this app can detect beacons.");
-            builder.setPositiveButton(android.R.string.ok, null);
-            builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
-                public void onDismiss(DialogInterface dialog) {
-                    requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSION_REQUEST_COARSE_LOCATION);
-                }
-            });
-            builder.show();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            // Android M Permission check?
+            if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("This app needs location access");
+                builder.setMessage("Please grant location access so this app can detect beacons.");
+                builder.setPositiveButton(android.R.string.ok, null);
+                builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    public void onDismiss(DialogInterface dialog) {
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSION_REQUEST_COARSE_LOCATION);
+                        }
+                    }
+                });
+                builder.show();
+            }
         }
 
+        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if (mBluetoothAdapter == null) {
+            // Device does not support Bluetooth
+        } else {
+            if (!mBluetoothAdapter.isEnabled()) {
+                // Bluetooth is not enable :)
+                snackbar = Snackbar.make(findViewById(android.R.id.content), "Bluetooth staat uit", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Zet op", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                setBluetooth();
+                            }
+                        });
+                snackbar.show();
+            }
+
+
+        }
         beaconManager.bind(this);
     }
 
@@ -127,11 +154,10 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(MainActivity.this, "Geen beacons gevonden",
-                                    Toast.LENGTH_LONG).show();
+                            // Toast.makeText(MainActivity.this, "Geen beacons gevonden",
+                            //        Toast.LENGTH_LONG).show();
                         }
                     });
-
                 }
             }
         });
@@ -286,5 +312,13 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
             return null;
         }
         return json;
+    }
+
+    public void setBluetooth() {
+        BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        boolean isEnabled = bluetoothAdapter.isEnabled();
+        if (!isEnabled) {
+            bluetoothAdapter.enable();
+        }
     }
 }

@@ -2,11 +2,13 @@ package com.example.android.beaconlist;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothAdapter;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,6 +17,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
 
 import com.example.android.beaconlist.fragments.Verdiep0Fragment;
 import com.example.android.beaconlist.fragments.Verdiep1Fragment;
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private Snackbar snackbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +85,23 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if (mBluetoothAdapter == null) {
+            // Device does not support Bluetooth
+        } else {
+            if (!mBluetoothAdapter.isEnabled()) {
+                // Bluetooth is not enable :)
+                snackbar = Snackbar.make(findViewById(android.R.id.content), "Bluetooth staat uit", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Zet op", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                setBluetooth();
+                            }
+                        });
+                snackbar.show();
+            }
+        }
 
         //Beacons
         beaconManager = BeaconManager.getInstanceForApplication(this);
@@ -305,6 +326,14 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
             return null;
         }
         return json;
+    }
+
+    public void setBluetooth() {
+        BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        boolean isEnabled = bluetoothAdapter.isEnabled();
+        if (!isEnabled) {
+            bluetoothAdapter.enable();
+        }
     }
 
 }
