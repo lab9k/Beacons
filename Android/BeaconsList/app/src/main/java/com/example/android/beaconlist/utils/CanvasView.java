@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 public class CanvasView extends View {
@@ -46,13 +47,16 @@ public class CanvasView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        int width = getWidth();
+        int height = getHeight();
+
         paint.setStyle(Paint.Style.STROKE);
 
         for (int i = 0; i < grid.length; i++) {
             x = grid[i][0];
             y = grid[i][1];
-            paint.setColor((int)grid[i][2]);
-            canvas.drawCircle(x,y,3,paint);
+            paint.setColor((int) grid[i][2]);
+            canvas.drawCircle((x / 1536) * width, (y / 952) * height, 3, paint);
         }
     }
 

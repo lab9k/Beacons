@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
 
     private static final int MY_PERMISSIONS_REQUEST_ACCOUNTS = 1;
 
-
     private BeaconManager beaconManager;
 
     private HashMap<String, List<Beacon>> verdiepBeacons = new HashMap<>();
