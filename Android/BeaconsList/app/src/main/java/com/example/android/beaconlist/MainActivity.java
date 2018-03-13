@@ -52,6 +52,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -64,20 +65,16 @@ import jxl.write.WritableWorkbook;
 
 public class MainActivity extends AppCompatActivity implements BeaconConsumer, BeaconInterface {
 
-    //    private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
     private static final int MY_PERMISSIONS_REQUEST_ACCOUNTS = 1;
 
 
     private BeaconManager beaconManager;
 
+    private HashMap<String, List<Beacon>> verdiepBeacons = new HashMap<>();
     private List<Beacon> gevondenBeacons = new ArrayList<>();
     private List<Beacon> bestaandeBeacons = new ArrayList<>();
-    private List<Beacon> bestaandeMin1Beacons = new ArrayList<>();
-    private List<Beacon> bestaandeMin2Beacons = new ArrayList<>();
-    private List<Beacon> bestaande0Beacons = new ArrayList<>();
-    private List<Beacon> bestaande1Beacons = new ArrayList<>();
-    private List<Beacon> bestaande2Beacons = new ArrayList<>();
-    private List<Beacon> bestaande3Beacons = new ArrayList<>();
+    private List<Float> xMin2 = new ArrayList<>();
+    private List<Float> yMin2 = new ArrayList<>();
     private VerdiepMin2Fragment verdiepMin2Fragment;
     private VerdiepMin1Fragment verdiepMin1Fragment;
     private Verdiep0Fragment verdiep0Fragment;
@@ -99,7 +96,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         //Tablayout
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -131,29 +127,14 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         //iBeacon layout nr
         beaconManager.getBeaconParsers().add(new BeaconParser().setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
 
+        for (int i = -2; i < 4; i++)
+            verdiepBeacons.put(String.valueOf(i), new ArrayList<Beacon>());
+
         getInfoFromJson();
+
         // beide permissies checken
         checkAndRequestPermissions();
 
-        // enkel locatiepermissie
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//            // Android M Permission check 
-//            if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//                final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-//                builder.setTitle("This app needs location access");
-//                builder.setMessage("Please grant location access so this app can detect beacons.");
-//                builder.setPositiveButton(android.R.string.ok, null);
-//                builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
-//                    @Override
-//                    public void onDismiss(DialogInterface dialog) {
-//                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                            requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSION_REQUEST_COARSE_LOCATION);
-//                        }
-//                    }
-//                });
-//                builder.show();
-//            }
-//        }
         beaconManager.bind(this);
 
         // ignore FileUriExposedException
@@ -177,7 +158,12 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
                     for (Beacon beacon : beacons) {
                         if (!gevondenBeacons.contains(beacon)) {
                             gevondenBeacons.add(beacon);
-                            // updateFragmenten();
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    updateFragmenten();
+                                }
+                            });
                         }
                     }
                 }
@@ -214,50 +200,39 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         return gevondenBeacons;
     }
 
-    public List<Beacon> getBeaconsMin2() {
-        return bestaandeMin2Beacons;
-    }
-
-    public List<Beacon> getBestaandeMin1Beacons() {
-        return bestaandeMin1Beacons;
-    }
-
-    public List<Beacon> getBestaande0Beacons() {
-        return bestaande0Beacons;
-    }
-
-    public List<Beacon> getBestaande1Beacons() {
-        return bestaande1Beacons;
-    }
-
-    public List<Beacon> getBestaande2Beacons() {
-        return bestaande2Beacons;
-    }
-
-    public List<Beacon> getBestaande3Beacons() {
-        return bestaande3Beacons;
+    public List<Beacon> getVerdiepBeacons(String verdiep) {
+        return verdiepBeacons.get(verdiep);
     }
 
     @Override
     public void updateFragmenten() {
-        if (!gevondenBeacons.isEmpty() && gevondenBeacons != null) {
-            verdiep0Fragment.updateList(gevondenBeacons);
-            verdiep1Fragment.updateList(gevondenBeacons);
-            verdiep2Fragment.updateList(gevondenBeacons);
-            verdiep3Fragment.updateList(gevondenBeacons);
-            verdiepMin2Fragment.updateList(gevondenBeacons);
-            verdiepMin1Fragment.updateList(gevondenBeacons);
-        }
+
+        Fragment page = getSupportFragmentManager().findFragmentByTag("android:switcher:" + R.id.viewpager + ":" + viewPager.getCurrentItem());
+
+        if (page instanceof VerdiepMin2Fragment)
+            ((VerdiepMin2Fragment) page).updateList(gevondenBeacons);
+        else if (page instanceof VerdiepMin1Fragment)
+            ((VerdiepMin1Fragment) page).updateList(gevondenBeacons);
+        else if (page instanceof Verdiep0Fragment)
+            ((Verdiep0Fragment) page).updateList(gevondenBeacons);
+        else if (page instanceof Verdiep1Fragment)
+            ((Verdiep1Fragment) page).updateList(gevondenBeacons);
+        else if (page instanceof Verdiep2Fragment)
+            ((Verdiep2Fragment) page).updateList(gevondenBeacons);
+        else
+            ((Verdiep3Fragment) page).updateList(gevondenBeacons);
     }
 
     public void getInfoFromJson() {
         try {
             JSONObject obj = new JSONObject(loadJSONFromAsset("beaconsKrook.json"));
             JSONArray beaconsArray = obj.getJSONArray("beaconsKrook");
+            List<Beacon> temp;
             for (int i = 0; i < beaconsArray.length(); i++) {
                 JSONObject jsonObject = beaconsArray.getJSONObject(i);
                 String beaconid = jsonObject.getString("beaconid");
                 String verdiep = jsonObject.getString("verdieping");
+
                 Beacon beacon = new Beacon.Builder()
                         .setId1(beaconid.toLowerCase())
                         .setId2("0")
@@ -266,22 +241,38 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
                         .build();
                 switch (verdiep) {
                     case "-2":
-                        bestaandeMin2Beacons.add(beacon);
+                        temp = verdiepBeacons.get("-2");
+                        temp.add(beacon);
+                        verdiepBeacons.put("-2", temp);
+                        float x = jsonObject.getLong("x");
+                        float y = jsonObject.getLong("y");
+                        xMin2.add(x);
+                        yMin2.add(y);
                         break;
                     case "-1":
-                        bestaandeMin1Beacons.add(beacon);
+                        temp = verdiepBeacons.get("-1");
+                        temp.add(beacon);
+                        verdiepBeacons.put("-1", temp);
                         break;
                     case "0":
-                        bestaande0Beacons.add(beacon);
+                        temp = verdiepBeacons.get("0");
+                        temp.add(beacon);
+                        verdiepBeacons.put("0", temp);
                         break;
                     case "1":
-                        bestaande1Beacons.add(beacon);
+                        temp = verdiepBeacons.get("1");
+                        temp.add(beacon);
+                        verdiepBeacons.put("1", temp);
                         break;
                     case "2":
-                        bestaande2Beacons.add(beacon);
+                        temp = verdiepBeacons.get("2");
+                        temp.add(beacon);
+                        verdiepBeacons.put("2", temp);
                         break;
                     case "3":
-                        bestaande3Beacons.add(beacon);
+                        temp = verdiepBeacons.get("3");
+                        temp.add(beacon);
+                        verdiepBeacons.put("3", temp);
                         break;
                 }
                 bestaandeBeacons.add(beacon);
@@ -289,6 +280,14 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<Float> getYMin2() {
+        return yMin2;
+    }
+
+    public List<Float> getXMin2() {
+        return xMin2;
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -319,32 +318,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
             return mFragmentTitleList.get(position);
         }
     }
-
-//    @Override
-//    public void onRequestPermissionsResult(int requestCode,
-//                                           String permissions[],
-//                                           int[] grantResults) {
-//        switch (requestCode) {
-//            case PERMISSION_REQUEST_COARSE_LOCATION: {
-//                if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-//                    Log.d("MainActivity", "coarse location permission granted");
-//                } else {
-//                    final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-//                    builder.setTitle("Functionality limited");
-//                    builder.setMessage("Since location access has not been granted, this app will not be able to discover beacons when in the background.");
-//                    builder.setPositiveButton(android.R.string.ok, null);
-//                    builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
-//                        @Override
-//                        public void onDismiss(DialogInterface dialog) {
-//                        }
-//                    });
-//                    builder.show();
-//                }
-//                return;
-//            }
-//        }
-//    }
-
 
     public String loadJSONFromAsset(String filename) {
         String json = null;
@@ -481,22 +454,22 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
                             public void onClick(DialogInterface dialog, int chooseItem) {
                                 switch (chooseItem) {
                                     case 0:
-                                        makeExcel(bestaandeMin2Beacons, "Beacons Verdiep -2", -2);
+                                        makeExcel(verdiepBeacons.get("-2"), "Beacons Verdiep -2", -2);
                                         break;
                                     case 1:
-                                        makeExcel(bestaandeMin1Beacons, "Beacons Verdiep -1", -1);
+                                        makeExcel(verdiepBeacons.get("-1"), "Beacons Verdiep -1", -1);
                                         break;
                                     case 2:
-                                        makeExcel(bestaande0Beacons, "Beacons Verdiep 0", 0);
+                                        makeExcel(verdiepBeacons.get("0"), "Beacons Verdiep 0", 0);
                                         break;
                                     case 3:
-                                        makeExcel(bestaande1Beacons, "Beacons Verdiep 1", 1);
+                                        makeExcel(verdiepBeacons.get("1"), "Beacons Verdiep 1", 1);
                                         break;
                                     case 4:
-                                        makeExcel(bestaande2Beacons, "Beacons Verdiep 2", 2);
+                                        makeExcel(verdiepBeacons.get("2"), "Beacons Verdiep 2", 2);
                                         break;
                                     case 5:
-                                        makeExcel(bestaande3Beacons, "Beacons Verdiep 3", 3);
+                                        makeExcel(verdiepBeacons.get("3"), "Beacons Verdiep 3", 3);
                                         break;
                                     case 6:
                                         makeExcel(bestaandeBeacons, "Alle Beacons", 7);
@@ -542,7 +515,8 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         return true;
     }
 
-    @Override public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
             case MY_PERMISSIONS_REQUEST_ACCOUNTS:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
