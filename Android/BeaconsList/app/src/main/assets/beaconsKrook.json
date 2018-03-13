@@ -1,95 +1,131 @@
 {
   "beaconsKrook": [
     //test beacon in nest
-//        {
-//          "verdieping": "-2",
-//          "octaid": "0",
-//          "beaconid": "e2c56db5-dffb-48d2-b060-d04f435441f9"
-//        },
-    {
-      "verdieping": "-2",
-      "octaid": "0",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544100"
-    },
+            {
+              "verdieping": "-2",
+              "octaid": "0",
+              "beaconid": "e2c56db5-dffb-48d2-b060-d04f435441f9",
+              "x": 507.3259843,
+              "y": 288.680315
+            },
+//    {
+//      "verdieping": "-2",
+//      "octaid": "0",
+//      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544100",
+//      "x": 507.3259843,
+//      "y": 288.680315
+//    },
     {
       "verdieping": "-2",
       "octaid": "1",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544101"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544101",
+      "x": 574.6771654,
+      "y": 416.0125984
     },
     {
       "verdieping": "-2",
       "octaid": "2",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544102"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544102",
+      "x": 603.3259843,
+      "y": 456
     },
     {
       "verdieping": "-2",
       "octaid": "3",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544103"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544103",
+      "x": 619.3511811,
+      "y": 330.6708661
     },
     {
       "verdieping": "-2",
       "octaid": "4",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544104"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544104",
+      "x": 666.6708661,
+      "y": 249.3354331
     },
     {
       "verdieping": "-2",
       "octaid": "5",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544105"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544105",
+      "x": 702.6519685,
+      "y": 307.3511811
     },
     {
       "verdieping": "-2",
       "octaid": "6",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544106"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544106",
+      "x": 733.984252,
+      "y": 377.9905512
     },
     {
       "verdieping": "-2",
       "octaid": "7",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544107"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544107",
+      "x": 858.6708661,
+      "y": 430.6771654
     },
     {
       "verdieping": "-2",
       "octaid": "8",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544108"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544108",
+      "x": 772.6488189,
+      "y": 274.6582677
     },
     {
       "verdieping": "-2",
       "octaid": "9",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544109"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544109",
+      "x": 906.6708661,
+      "y": 338.6834646
     },
     {
       "verdieping": "-2",
       "octaid": "10",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410A"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410A",
+      "x": 820.6488189,
+      "y": 195.3259843
     },
     {
       "verdieping": "-2",
       "octaid": "11",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410B"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410B",
+      "x": 933.3165354,
+      "y": 225.3354331
     },
     {
       "verdieping": "-2",
       "octaid": "12",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410C"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410C",
+      "x": 1034.00315,
+      "y": 241.3228346
     },
     {
       "verdieping": "-2",
       "octaid": "13",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410D"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410D",
+      "x": 1124.674016,
+      "y": 221.3291339
     },
     {
       "verdieping": "-2",
       "octaid": "14",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410E"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410E",
+      "x": 1098.670866,
+      "y": 364.0062992
     },
     {
       "verdieping": "-2",
       "octaid": "15",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410F"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410F",
+      "x": 1176,
+      "y": 379.9937008
     },
     {
       "verdieping": "-2",
       "octaid": "237",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f435441ED"
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f435441ED",
+      "x": 1165.984252,
+      "y": 456
     },
     {
       "verdieping": "-1",

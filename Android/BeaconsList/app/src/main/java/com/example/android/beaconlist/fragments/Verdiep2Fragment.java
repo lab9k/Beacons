@@ -1,7 +1,5 @@
 package com.example.android.beaconlist.fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
@@ -18,8 +16,6 @@ import com.example.android.beaconlist.adapters.BeaconAdapter;
 import org.altbeacon.beacon.Beacon;
 
 import java.util.List;
-
-import butterknife.ButterKnife;
 
 
 public class Verdiep2Fragment extends Fragment {
@@ -47,7 +43,7 @@ public class Verdiep2Fragment extends Fragment {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(lijst.getContext(),
                 DividerItemDecoration.VERTICAL);
         lijst.addItemDecoration(dividerItemDecoration);
-        adapter = new BeaconAdapter(hoofdActivity.getBestaande2Beacons());
+        adapter = new BeaconAdapter(hoofdActivity.getVerdiepBeacons("2"));
         lijst.setAdapter(adapter);
 
         updateList(hoofdActivity.getGevondenBeacons());
