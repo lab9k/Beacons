@@ -1,5 +1,7 @@
 package com.example.android.beaconlist.fragments;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
@@ -12,6 +14,7 @@ import android.view.ViewGroup;
 import com.example.android.beaconlist.MainActivity;
 import com.example.android.beaconlist.R;
 import com.example.android.beaconlist.adapters.BeaconAdapter;
+import com.example.android.beaconlist.utils.CanvasView;
 
 import org.altbeacon.beacon.Beacon;
 
@@ -24,26 +27,38 @@ public class VerdiepMin1Fragment extends Fragment {
     private BeaconAdapter adapter;
     private RecyclerView lijst;
     private LinearLayoutManager mLayoutManager;
-
+    private CanvasView canvasView;
+    private float[][] grid;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_verdiep_min1, container, false);
 
+        canvasView = (CanvasView) v.findViewById(R.id.canvas);
+
         hoofdActivity = ((MainActivity) getActivity());
+
 
         lijst = v.findViewById(R.id.recycler_view_min_1);
         mLayoutManager = new LinearLayoutManager(getActivity());
+        lijst.setLayoutManager(mLayoutManager);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(lijst.getContext(),
                 DividerItemDecoration.VERTICAL);
         lijst.addItemDecoration(dividerItemDecoration);
-        lijst.setLayoutManager(mLayoutManager);
         adapter = new BeaconAdapter(hoofdActivity.getVerdiepBeacons("-1"));
         lijst.setAdapter(adapter);
 
+        grid = new float[hoofdActivity.getVerdiepBeacons("-1").size()][3];
+
         updateList(hoofdActivity.getGevondenBeacons());
         return v;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
     }
 
     public void updateList(List<Beacon> gevondenBeacons) {
@@ -54,5 +69,8 @@ public class VerdiepMin1Fragment extends Fragment {
                 adapter.notifyDataSetChanged();
             }
         });
+
+        grid = hoofdActivity.updateMapBeacons(grid, "-1");
+        canvasView.drawBeacons(grid);
     }
 }

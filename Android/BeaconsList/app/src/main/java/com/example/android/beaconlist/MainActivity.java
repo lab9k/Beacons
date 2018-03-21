@@ -7,6 +7,7 @@ import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -36,6 +37,8 @@ import com.example.android.beaconlist.fragments.Verdiep3Fragment;
 import com.example.android.beaconlist.fragments.VerdiepMin1Fragment;
 import com.example.android.beaconlist.fragments.VerdiepMin2Fragment;
 import com.example.android.beaconlist.interfaces.BeaconInterface;
+import com.lemmingapex.trilateration.NonLinearLeastSquaresSolver;
+import com.lemmingapex.trilateration.TrilaterationFunction;
 
 import org.altbeacon.beacon.Beacon;
 import org.altbeacon.beacon.BeaconConsumer;
@@ -43,6 +46,10 @@ import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.BeaconParser;
 import org.altbeacon.beacon.RangeNotifier;
 import org.altbeacon.beacon.Region;
+import org.apache.commons.math3.fitting.leastsquares.LeastSquaresOptimizer;
+import org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizer;
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.RealVector;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -70,10 +77,10 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
     private BeaconManager beaconManager;
 
     private HashMap<String, List<Beacon>> verdiepBeacons = new HashMap<>();
+    private HashMap<String, List<Float>> verdiepX = new HashMap<>();
+    private HashMap<String, List<Float>> verdiepY = new HashMap<>();
     private List<Beacon> gevondenBeacons = new ArrayList<>();
     private List<Beacon> bestaandeBeacons = new ArrayList<>();
-    private List<Float> xMin2 = new ArrayList<>();
-    private List<Float> yMin2 = new ArrayList<>();
     private VerdiepMin2Fragment verdiepMin2Fragment;
     private VerdiepMin1Fragment verdiepMin1Fragment;
     private Verdiep0Fragment verdiep0Fragment;
@@ -81,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
     private Verdiep2Fragment verdiep2Fragment;
     private Verdiep3Fragment verdiep3Fragment;
 
+    private BluetoothAdapter mBluetoothAdapter;
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -103,9 +111,11 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         tabLayout.setupWithViewPager(viewPager);
 
         //check if bluetooth is on
-        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (mBluetoothAdapter == null) {
             // Device does not support Bluetooth
+            snackbar = Snackbar.make(findViewById(android.R.id.content), "Apparaat ondersteunt geen bleutooth", Snackbar.LENGTH_INDEFINITE);
+            snackbar.show();
         } else {
             if (!mBluetoothAdapter.isEnabled()) {
                 // Bluetooth is not enable :)
@@ -126,8 +136,11 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         //iBeacon layout nr
         beaconManager.getBeaconParsers().add(new BeaconParser().setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
 
-        for (int i = -2; i < 4; i++)
+        for (int i = -2; i < 4; i++) {
             verdiepBeacons.put(String.valueOf(i), new ArrayList<Beacon>());
+            verdiepX.put(String.valueOf(i), new ArrayList<Float>());
+            verdiepY.put(String.valueOf(i), new ArrayList<Float>());
+        }
 
         getInfoFromJson();
 
@@ -139,8 +152,8 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         // ignore FileUriExposedException
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
-    }
 
+    }
 
     @Override
     protected void onDestroy() {
@@ -173,7 +186,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         } catch (RemoteException e) {
         }
     }
-
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
@@ -222,58 +234,55 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
             ((Verdiep3Fragment) page).updateList(gevondenBeacons);
     }
 
+    @Override
+    public float[][] updateMapBeacons(float[][] grid, String verdiep) {
+        float[][] tempGrid = grid;
+        List<Float> x = getVerdiepX(verdiep);
+        List<Float> y = getVerdiepY(verdiep);
+        int color;
+        for (int i = 0; i < x.size(); i++) {
+            if (!mBluetoothAdapter.isEnabled())
+                color = Color.BLACK;
+            else if (getGevondenBeacons().contains(getVerdiepBeacons(verdiep).get(i))) {
+                color = Color.GREEN;
+            } else {
+                color = Color.RED;
+            }
+            tempGrid[i][0] = x.get(i);
+            tempGrid[i][1] = y.get(i);
+            tempGrid[i][2] = color;
+        }
+        return tempGrid;
+    }
+
     public void getInfoFromJson() {
         try {
             JSONObject obj = new JSONObject(loadJSONFromAsset("beaconsKrook.json"));
             JSONArray beaconsArray = obj.getJSONArray("beaconsKrook");
             List<Beacon> temp;
+            List<Float> tempX, tempY;
+            float x, y;
             for (int i = 0; i < beaconsArray.length(); i++) {
                 JSONObject jsonObject = beaconsArray.getJSONObject(i);
                 String beaconid = jsonObject.getString("beaconid");
                 String verdiep = jsonObject.getString("verdieping");
-
+                x = jsonObject.getLong("x");
+                y = jsonObject.getLong("y");
                 Beacon beacon = new Beacon.Builder()
                         .setId1(beaconid.toLowerCase())
                         .setId2("0")
                         .setId3("0")
                         .setTxPower(-61)
                         .build();
-                switch (verdiep) {
-                    case "-2":
-                        temp = verdiepBeacons.get("-2");
-                        temp.add(beacon);
-                        verdiepBeacons.put("-2", temp);
-                        float x = jsonObject.getLong("x");
-                        float y = jsonObject.getLong("y");
-                        xMin2.add(x);
-                        yMin2.add(y);
-                        break;
-                    case "-1":
-                        temp = verdiepBeacons.get("-1");
-                        temp.add(beacon);
-                        verdiepBeacons.put("-1", temp);
-                        break;
-                    case "0":
-                        temp = verdiepBeacons.get("0");
-                        temp.add(beacon);
-                        verdiepBeacons.put("0", temp);
-                        break;
-                    case "1":
-                        temp = verdiepBeacons.get("1");
-                        temp.add(beacon);
-                        verdiepBeacons.put("1", temp);
-                        break;
-                    case "2":
-                        temp = verdiepBeacons.get("2");
-                        temp.add(beacon);
-                        verdiepBeacons.put("2", temp);
-                        break;
-                    case "3":
-                        temp = verdiepBeacons.get("3");
-                        temp.add(beacon);
-                        verdiepBeacons.put("3", temp);
-                        break;
-                }
+                temp = verdiepBeacons.get(verdiep);
+                temp.add(beacon);
+                verdiepBeacons.put(verdiep, temp);
+                tempX = verdiepX.get(verdiep);
+                tempX.add(x);
+                verdiepX.put(verdiep, tempX);
+                tempY = verdiepY.get(verdiep);
+                tempY.add(y);
+                verdiepY.put(verdiep, tempY);
                 bestaandeBeacons.add(beacon);
             }
         } catch (JSONException e) {
@@ -281,12 +290,12 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         }
     }
 
-    public List<Float> getYMin2() {
-        return yMin2;
+    public List<Float> getVerdiepY(String verdiep) {
+        return verdiepY.get(verdiep);
     }
 
-    public List<Float> getXMin2() {
-        return xMin2;
+    public List<Float> getVerdiepX(String verdiep) {
+        return verdiepX.get(verdiep);
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -341,7 +350,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
             bluetoothAdapter.enable();
         }
     }
-
 
     private void makeExcel(List<Beacon> beacons, final String filename, int verdieping) {
         final File sd = Environment.getExternalStorageDirectory();
@@ -483,7 +491,6 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
                 return super.onOptionsItemSelected(item);
         }
     }
-
 
     private boolean checkAndRequestPermissions() {
         int permissionLocation = ContextCompat.checkSelfPermission(this,

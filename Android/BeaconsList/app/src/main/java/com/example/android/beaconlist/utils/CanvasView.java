@@ -10,13 +10,12 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 public class CanvasView extends View {
 
     private Paint paint;
-    private Path path;
+    private Paint locationPaint;
     private float x;
     private float y;
     private float[][] grid;
@@ -38,9 +37,12 @@ public class CanvasView extends View {
 
     private void init() {
         paint = new Paint();
-        paint.setColor(Color.RED);
-        paint.setStrokeWidth(10);
+        paint.setStrokeWidth(8);
         paint.setStyle(Paint.Style.STROKE);
+        locationPaint = new Paint();
+        locationPaint.setColor(Color.BLUE);
+        locationPaint.setStrokeWidth(10);
+        locationPaint.setStyle(Paint.Style.STROKE);
     }
 
     @Override
@@ -56,7 +58,7 @@ public class CanvasView extends View {
             x = grid[i][0];
             y = grid[i][1];
             paint.setColor((int) grid[i][2]);
-            canvas.drawCircle((x / 1536) * width, (y / 952) * height, 3, paint);
+            canvas.drawCircle((float) (x / 491.3385827) * width, (float) (y / 226.7716535) * height, 1, paint);
         }
     }
 
