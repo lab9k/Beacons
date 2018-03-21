@@ -7,4 +7,6 @@ package com.example.android.beaconlist.interfaces;
 public interface BeaconInterface {
 
     void updateFragmenten();
+
+    float[][] updateMapBeacons(float[][] grid, String s);
 }
