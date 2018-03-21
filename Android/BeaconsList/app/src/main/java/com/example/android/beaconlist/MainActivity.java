@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (mBluetoothAdapter == null) {
             // Device does not support Bluetooth
-            snackbar = Snackbar.make(findViewById(android.R.id.content), "Apparaat ondersteunt geen bleutooth", Snackbar.LENGTH_INDEFINITE);
+            snackbar = Snackbar.make(findViewById(android.R.id.content), "Apparaat ondersteunt geen bluetooth", Snackbar.LENGTH_INDEFINITE);
             snackbar.show();
         } else {
             if (!mBluetoothAdapter.isEnabled()) {
@@ -241,7 +241,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer, B
         List<Float> y = getVerdiepY(verdiep);
         int color;
         for (int i = 0; i < x.size(); i++) {
-            if (!mBluetoothAdapter.isEnabled())
+            if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled())
                 color = Color.BLACK;
             else if (getGevondenBeacons().contains(getVerdiepBeacons(verdiep).get(i))) {
                 color = Color.GREEN;
