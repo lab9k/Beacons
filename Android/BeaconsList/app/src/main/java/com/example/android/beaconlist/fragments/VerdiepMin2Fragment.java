@@ -28,10 +28,7 @@ public class VerdiepMin2Fragment extends Fragment {
     private RecyclerView lijst;
     private LinearLayoutManager mLayoutManager;
     private CanvasView canvasView;
-    private List<Float> x;
-    private List<Float> y;
     private float[][] grid;
-    private Context context;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -53,8 +50,6 @@ public class VerdiepMin2Fragment extends Fragment {
         lijst.setAdapter(adapter);
 
         grid = new float[hoofdActivity.getVerdiepBeacons("-2").size()][3];
-        x = hoofdActivity.getXMin2();
-        y = hoofdActivity.getYMin2();
 
         updateList(hoofdActivity.getGevondenBeacons());
         return v;
@@ -75,21 +70,7 @@ public class VerdiepMin2Fragment extends Fragment {
             }
         });
 
-        updateMapBeacons();
-    }
-
-    public void updateMapBeacons() {
-        int color;
-        for (int i = 0; i < x.size(); i++) {
-            if (hoofdActivity.getGevondenBeacons().contains(hoofdActivity.getVerdiepBeacons("-2").get(i))) {
-                color = Color.GREEN;
-            } else {
-                color = Color.RED;
-            }
-            grid[i][0] = x.get(i);
-            grid[i][1] = y.get(i);
-            grid[i][2] = color;
-        }
+        grid = hoofdActivity.updateMapBeacons(grid, "-2");
         canvasView.drawBeacons(grid);
     }
 }
