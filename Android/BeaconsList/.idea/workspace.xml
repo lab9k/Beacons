@@ -10,108 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bfa1ec8-e3f7-4ddd-a7ba-73c15b0f0fad" name="Default" comment="Verdiep -2 toont map met beacons aangeduid, werkend of niet werkend">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-hdpi/_1_grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-mdpi/_1_grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-xhdpi/_1_grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/verdiep_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/verdiep_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/verdiep_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/verdiep_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/verdiep_min_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/verdiep_min_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/verdiep_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/verdiep_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/verdiep_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/verdiep_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/verdiep_min_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/verdiep_min_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/verdiep_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/verdiep_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/verdiep_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/verdiep_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/verdiep_min_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/verdiep_min_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/.idea/runConfigurations.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/androidTest/java/com/example/android/beacontrilateration/ExampleInstrumentedTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/assets/beaconsKrook.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/assets/beaconsVerdiepen.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/java/com/example/android/beacontrilateration/MainActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/java/com/example/android/beacontrilateration/model/Verdiep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/java/com/example/android/beacontrilateration/utils/CanvasView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/java/com/example/android/beacontrilateration/utils/Kalman.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/java/com/example/android/beacontrilateration/utils/StatUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable/ic_launcher_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/layout/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/test/java/com/example/android/beacontrilateration/ExampleUnitTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/gradle.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BeaconTrilateration/settings.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/_2grid.png" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-hdpi/_grid.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/_2grid.png" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-mdpi/_grid.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/_2grid.png" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-xhdpi/_grid.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/_2grid.png" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-xxhdpi/_grid.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/_2grid.png" afterPath="$PROJECT_DIR$/../BeaconTrilateration/app/src/main/res/drawable-xxxhdpi/_grid.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json" afterPath="$PROJECT_DIR$/app/src/main/assets/beaconsKrook.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep0Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep0Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep1Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep1Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep2Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep2Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep3Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/Verdiep3Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/VerdiepMin1Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/VerdiepMin1Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/VerdiepMin2Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/fragments/VerdiepMin2Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/interfaces/BeaconInterface.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/interfaces/BeaconInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/utils/CanvasView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/utils/CanvasView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_radio_button.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_radio_button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep0.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep1.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep3.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep_min1.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep_min1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep_min2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verdiep_min2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_list_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_list_item.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,25 +37,38 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+            <state relative-caret-position="-691">
+              <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding>
-                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onDestroy#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#updateMapBeacons#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#addFrag#0;class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#checkAndRequestPermissions#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#4832#5060#0" expanded="true" />
+                <element signature="e#5059#5060#0" expanded="true" />
+                <element signature="e#6162#6879#0" expanded="true" />
+                <element signature="e#6557#6787#0" expanded="true" />
+                <element signature="e#6786#6787#0" expanded="true" />
+                <element signature="e#6878#6879#0" expanded="true" />
+                <element signature="e#7954#7955#0" expanded="true" />
+                <element signature="e#7992#7993#0" expanded="true" />
+                <element signature="e#8053#8054#0" expanded="true" />
+                <element signature="e#8103#8104#0" expanded="true" />
+                <element signature="e#11198#11199#0" expanded="true" />
+                <element signature="e#11242#11243#0" expanded="true" />
+                <element signature="e#11296#11297#0" expanded="true" />
+                <element signature="e#11340#11341#0" expanded="true" />
+                <element signature="e#11606#11607#0" expanded="true" />
+                <element signature="e#11644#11645#0" expanded="true" />
+                <element signature="e#11711#11712#0" expanded="true" />
+                <element signature="e#11769#11770#0" expanded="true" />
+                <element signature="e#11820#11821#0" expanded="true" />
+                <element signature="e#11871#11872#0" expanded="true" />
+                <element signature="e#12105#12106#0" expanded="true" />
+                <element signature="e#12168#12169#0" expanded="true" />
+                <element signature="e#15682#16645#0" expanded="true" />
+                <element signature="e#16644#16645#0" expanded="true" />
+                <element signature="e#17321#17336#0" expanded="true" />
+                <element signature="e#17394#18998#0" expanded="true" />
+                <element signature="e#18997#18998#0" expanded="true" />
+                <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+                <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -2100,7 +2012,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521631991020" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521634876035" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2148,7 +2060,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521631991020" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521634876035" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2180,27 +2092,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -2331,7 +2222,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521631991021" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521634876036" />
       </method>
     </configuration>
     <list size="1">
@@ -2379,6 +2270,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2397,7 +2289,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23748212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23748212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2405,12 +2297,36 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7444169" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6687345" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995037" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23748212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2474,10 +2390,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2496,9 +2412,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2510,10 +2428,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2532,9 +2450,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2546,10 +2466,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2568,9 +2488,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2582,10 +2504,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2604,9 +2526,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2632,10 +2556,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2654,9 +2578,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2668,10 +2594,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2690,9 +2616,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2718,10 +2646,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2740,9 +2668,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2762,10 +2692,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2784,9 +2714,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2798,10 +2730,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2820,9 +2752,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2834,10 +2768,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2856,9 +2790,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2884,10 +2820,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2906,9 +2842,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2920,10 +2858,10 @@
           <folding>
             <element signature="e#4832#5060#0" expanded="true" />
             <element signature="e#5059#5060#0" expanded="true" />
-            <element signature="e#6162#6879#0" expanded="false" />
-            <element signature="e#6557#6787#0" expanded="false" />
-            <element signature="e#6786#6787#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
             <element signature="e#7954#7955#0" expanded="true" />
             <element signature="e#7992#7993#0" expanded="true" />
             <element signature="e#8053#8054#0" expanded="true" />
@@ -2942,9 +2880,11 @@
             <element signature="e#12168#12169#0" expanded="true" />
             <element signature="e#15682#16645#0" expanded="true" />
             <element signature="e#16644#16645#0" expanded="true" />
-            <element signature="e#17321#17336#0" expanded="false" />
+            <element signature="e#17321#17336#0" expanded="true" />
             <element signature="e#17394#18998#0" expanded="true" />
             <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -3010,7 +2950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3018,7 +2957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="2978" column="0" lean-forward="false" selection-start-line="2978" selection-start-column="0" selection-end-line="2978" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3224,25 +3162,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/beaconlist/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+        <state relative-caret-position="-691">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onBeaconServiceConnect#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#setupViewPager#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateFragmenten#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateMapBeacons#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getInfoFromJson#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#addFrag#0;class#ViewPagerAdapter#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#loadJSONFromAsset#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#setBluetooth#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#makeExcel#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#checkAndRequestPermissions#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#4832#5060#0" expanded="true" />
+            <element signature="e#5059#5060#0" expanded="true" />
+            <element signature="e#6162#6879#0" expanded="true" />
+            <element signature="e#6557#6787#0" expanded="true" />
+            <element signature="e#6786#6787#0" expanded="true" />
+            <element signature="e#6878#6879#0" expanded="true" />
+            <element signature="e#7954#7955#0" expanded="true" />
+            <element signature="e#7992#7993#0" expanded="true" />
+            <element signature="e#8053#8054#0" expanded="true" />
+            <element signature="e#8103#8104#0" expanded="true" />
+            <element signature="e#11198#11199#0" expanded="true" />
+            <element signature="e#11242#11243#0" expanded="true" />
+            <element signature="e#11296#11297#0" expanded="true" />
+            <element signature="e#11340#11341#0" expanded="true" />
+            <element signature="e#11606#11607#0" expanded="true" />
+            <element signature="e#11644#11645#0" expanded="true" />
+            <element signature="e#11711#11712#0" expanded="true" />
+            <element signature="e#11769#11770#0" expanded="true" />
+            <element signature="e#11820#11821#0" expanded="true" />
+            <element signature="e#11871#11872#0" expanded="true" />
+            <element signature="e#12105#12106#0" expanded="true" />
+            <element signature="e#12168#12169#0" expanded="true" />
+            <element signature="e#15682#16645#0" expanded="true" />
+            <element signature="e#16644#16645#0" expanded="true" />
+            <element signature="e#17321#17336#0" expanded="true" />
+            <element signature="e#17394#18998#0" expanded="true" />
+            <element signature="e#18997#18998#0" expanded="true" />
+            <marker date="1521634819000" expanded="false" signature="19241:20197" ph="{...}" />
+            <marker date="1521634819000" expanded="false" signature="20315:22208" ph="{...}" />
           </folding>
         </state>
       </provider>
