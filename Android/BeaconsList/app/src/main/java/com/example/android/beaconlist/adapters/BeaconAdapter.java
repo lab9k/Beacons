@@ -66,7 +66,8 @@ public class BeaconAdapter extends RecyclerView.Adapter<BeaconAdapter.ViewHolder
                 holder.icon_beacon.setColorFilter(Color.GREEN, PorterDuff.Mode.SRC_ATOP);
             } else
                 holder.icon_beacon.setColorFilter(Color.RED, PorterDuff.Mode.SRC_ATOP);
-        }
+        } else holder.icon_beacon.setColorFilter(Color.RED, PorterDuff.Mode.SRC_ATOP);
+
     }
 
     @Override
