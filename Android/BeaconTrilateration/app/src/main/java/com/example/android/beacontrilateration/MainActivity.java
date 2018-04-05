@@ -13,10 +13,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.android.beacontrilateration.utils.CanvasView;
-import com.example.android.beacontrilateration.utils.Kalman;
 import com.lemmingapex.trilateration.NonLinearLeastSquaresSolver;
 import com.lemmingapex.trilateration.TrilaterationFunction;
 
@@ -26,7 +24,6 @@ import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.BeaconParser;
 import org.altbeacon.beacon.RangeNotifier;
 import org.altbeacon.beacon.Region;
-import org.apache.commons.math3.filter.KalmanFilter;
 import org.apache.commons.math3.fitting.leastsquares.LeastSquaresOptimizer;
 import org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizer;
 import org.json.JSONArray;
@@ -47,8 +44,8 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 
     private double[] centroid;
     private List<Beacon> verdiepBeacons = new ArrayList<>();
-    private List<Float> verdiepX = new ArrayList<>();
-    private List<Float> verdiepY = new ArrayList<>();
+    private List<Double> verdiepX = new ArrayList<>();
+    private List<Double> verdiepY = new ArrayList<>();
     private List<Beacon> bestaandeBeacons = new ArrayList<>();
 
     private BeaconManager beaconManager;
@@ -104,12 +101,12 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
         try {
             JSONObject obj = new JSONObject(loadJSONFromAsset("beaconsKrook.json"));
             JSONArray beaconsArray = obj.getJSONArray("beaconsKrook");
-            float x, y;
+            double x, y;
             for (int i = 0; i < beaconsArray.length(); i++) {
                 JSONObject jsonObject = beaconsArray.getJSONObject(i);
                 String beaconid = jsonObject.getString("beaconid");
-                x = jsonObject.getLong("x");
-                y = jsonObject.getLong("y");
+                x = jsonObject.getDouble("x");
+                y = jsonObject.getDouble("y");
                 Beacon beacon = new Beacon.Builder()
                         .setId1(beaconid.toLowerCase())
                         .setId2("0")
@@ -164,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
 //                    }
 
                     List<Beacon> lijstBeacons = new ArrayList<>();
-
+//
                     for (Beacon b : beacons) {
                         if (verdiepBeacons.contains(b)) {
                             lijstBeacons.add(b);
@@ -192,6 +189,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
                         int index2 = verdiepBeacons.indexOf(lijstBeacons.get(1));
                         int index3 = verdiepBeacons.indexOf(lijstBeacons.get(2));
                         int index4 = verdiepBeacons.indexOf(lijstBeacons.get(3));
+
                         if (index1 != -1 && index2 != -1 && index3 != -1 && index4 != -1) {
                             double[][] positions = new double[][]{{verdiepX.get(index1), verdiepY.get(index1)},
                                     {verdiepX.get(index2), verdiepY.get(index2)},
