@@ -39,6 +39,7 @@ public class MainActivity extends Activity implements BeaconConsumer {
     private HashMap<String, List<Double>> beaconsCoordinates = new HashMap<>();
     private String zone = "0";
 
+    private Comparator<Beacon> comparator;
 
     private CanvasView canvasView;
 
@@ -48,6 +49,20 @@ public class MainActivity extends Activity implements BeaconConsumer {
         setContentView(R.layout.activity_main);
         beaconManager = BeaconManager.getInstanceForApplication(this);
         beaconManager.getBeaconParsers().add(new BeaconParser().setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
+
+        comparator = new Comparator<Beacon>() {
+            @Override
+            public int compare(Beacon left, Beacon right) {
+                int compare = 0;
+                if (left.getDistance() < right.getDistance()) {
+                    compare = -1;
+                } else if (left.getDistance() > right.getDistance()) {
+                    compare = 1;
+                }
+                return compare;
+            }
+        };
+
         beaconManager.bind(this);
 
         canvasView = findViewById(R.id.canvas);
@@ -57,6 +72,8 @@ public class MainActivity extends Activity implements BeaconConsumer {
         }
 
         getInfoFromJson();
+
+
     }
 
     @Override
@@ -71,20 +88,7 @@ public class MainActivity extends Activity implements BeaconConsumer {
             @Override
             public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
                 if (beacons.size() > 0) {
-                    // Eigen comparator aanmaken om de Beacon objecten te kunnen sorteren
-                    Comparator<Beacon> comparator = new Comparator<Beacon>() {
-                        @Override
-                        public int compare(Beacon left, Beacon right) {
-                            int compare = 0;
-                            if (left.getDistance() < right.getDistance()) {
-                                compare = -1;
-                            } else if (left.getDistance() > right.getDistance()) {
-                                compare = 1;
-                            }
-                            return compare;
-                        }
-                    };
-
+                    
                     List<Beacon> lijstBeacons = new ArrayList<>(beacons);
 
                     Collections.sort(lijstBeacons, comparator);
