@@ -1,334 +1,123 @@
 {
   "beaconsKrook": [
-    //test beacon in nest
-    //    {
-    //      "verdieping": "-2",
-    //      "octaid": "0",
-    //      "beaconid": "e2c56db5-dffb-48d2-b060-d04f435441f9",
-    //      "x": 366.3496063,
-    //      "y": 196.9889764
-    //    },
     {
-      "verdieping": "-1",
-      "octaid": "16",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544110",
-      "x": 22.03464567,
-      "y": 103.823622
+      "verdieping": "-2",
+      "octaid": 0,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544100",
+      "x": 73.21322835,
+      "y": 70.80944882
     },
     {
-      "verdieping": "-1",
-      "octaid": "17",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544111",
-      "x": 46.6015748,
-      "y": 93.39212598
+      "verdieping": "-2",
+      "octaid": 1,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544101",
+      "x": 82.68850394,
+      "y": 97.31527559
     },
     {
-      "verdieping": "-1",
-      "octaid": "18",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544112",
-      "x": 72.49133858,
-      "y": 83.52755906
+      "verdieping": "-2",
+      "octaid": 2,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544102",
+      "x": 86.94425197,
+      "y": 106.1102362
     },
     {
-      "verdieping": "-1",
-      "octaid": "19",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544113",
-      "x": 108.4724409,
-      "y": 66.44409449
+      "verdieping": "-2",
+      "octaid": 3,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544103",
+      "x": 90.48566929,
+      "y": 78.60283465
     },
     {
-      "verdieping": "-1",
-      "octaid": "20",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544114",
-      "x": 132.5480315,
-      "y": 55.55905512
+      "verdieping": "-2",
+      "octaid": 4,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544104",
+      "x": 98.08251969,
+      "y": 61.93133858
     },
     {
-      "verdieping": "-1",
-      "octaid": "21",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544115",
-      "x": 162.4062992,
-      "y": 44.48503937
+      "verdieping": "-2",
+      "octaid": 5,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544105",
+      "x": 103.0790551,
+      "y": 74.52472441
     },
     {
-      "verdieping": "-1",
-      "octaid": "22",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544116",
-      "x": 236.6362205,
-      "y": 43.76692913
+      "verdieping": "-2",
+      "octaid": 6,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544106",
+      "x": 108.1171654,
+      "y": 88.92094488
     },
     {
-      "verdieping": "-1",
-      "octaid": "23",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544117",
-      "x": 281.9527559,
-      "y": 55.55905512
+      "verdieping": "-2",
+      "octaid": 7,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544107",
+      "x": 127.0601575,
+      "y": 99.86645669
     },
     {
-      "verdieping": "-1",
-      "octaid": "24",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544118",
-      "x": 26.00314961,
-      "y": 120.4535433
+      "verdieping": "-2",
+      "octaid": 8,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544108",
+      "x": 114.9543307,
+      "y": 68.56818898
     },
     {
-      "verdieping": "-1",
-      "octaid": "25",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544119",
-      "x": 69.99685039,
-      "y": 118.0724409
+      "verdieping": "-2",
+      "octaid": 9,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544109",
+      "x": 135.3184252,
+      "y": 80.5719685
     },
     {
-      "verdieping": "-1",
-      "octaid": "26",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354411A",
-      "x": 96.03779528,
-      "y": 109.2661417
+      "verdieping": "-2",
+      "octaid": 10,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410A",
+      "x": 123.3259843,
+      "y": 51.2503937
     },
     {
-      "verdieping": "-1",
-      "octaid": "27",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354411B",
-      "x": 117.9968504,
-      "y": 95.20629921
+      "verdieping": "-2",
+      "octaid": 11,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410B",
+      "x": 142.1404724,
+      "y": 57.19937008
     },
     {
-      "verdieping": "-1",
-      "octaid": "28",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354411C",
-      "x": 146.0787402,
-      "y": 86.66456693
+      "verdieping": "-2",
+      "octaid": 12,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410C",
+      "x": 155.5464567,
+      "y": 61.16787402
     },
     {
-      "verdieping": "-1",
-      "octaid": "29",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354411D",
-      "x": 172.0818898,
-      "y": 75.70393701
+      "verdieping": "-2",
+      "octaid": 13,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410D",
+      "x": 170.3584252,
+      "y": 56.53417323
     },
     {
-      "verdieping": "-1",
-      "octaid": "30",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354411E",
-      "x": 276.623622,
-      "y": 81.25984252
+      "verdieping": "-2",
+      "octaid": 14,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410E",
+      "x": 166.5033071,
+      "y": 86.83464567
     },
     {
-      "verdieping": "-1",
-      "octaid": "31",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354411F",
-      "x": 34.58267717,
-      "y": 141.1653543
+      "verdieping": "-2",
+      "octaid": 15,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354410F",
+      "x": 177.2825197,
+      "y": 91.03748031
     },
     {
-      "verdieping": "-1",
-      "octaid": "32",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544120",
-      "x": 61.26614173,
-      "y": 134.7023622
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "33",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544121",
-      "x": 85.37952756,
-      "y": 121.5874016
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "34",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544122",
-      "x": 151.1811024,
-      "y": 103.9748031
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "35",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544123",
-      "x": 184.2519685,
-      "y": 93.46771654
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "36",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544124",
-      "x": 219.3259843,
-      "y": 98.38110236
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "37",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544125",
-      "x": 257.0834646,
-      "y": 110.8913386
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "38",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544126",
-      "x": 271.5212598,
-      "y": 103.7480315
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "39",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544127",
-      "x": 40.66771654,
-      "y": 160.1007874
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "40",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544128",
-      "x": 178.3937008,
-      "y": 111.4582677
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "41",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544129",
-      "x": 71.20629921,
-      "y": 163.5401575
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "42",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354412A",
-      "x": 98.79685039,
-      "y": 156.7748031
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "43",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354412B",
-      "x": 123.5527559,
-      "y": 147.9307087
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "44",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354412C",
-      "x": 164.1070866,
-      "y": 133.4929134
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "45",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354412D",
-      "x": 188.9007874,
-      "y": 127.6346457
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "46",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354412E",
-      "x": 52.9511811,
-      "y": 201.3354331
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "47",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354412F",
-      "x": 74.9480315,
-      "y": 174.0094488
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "48",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544130",
-      "x": 81.37322835,
-      "y": 195.5905512
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "49",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544131",
-      "x": 192.680315,
-      "y": 149.7070866
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "50",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544132",
-      "x": 213.7700787,
-      "y": 146.7968504
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "51",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544133",
-      "x": 227.9433071,
-      "y": 138.8598425
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "52",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544134",
-      "x": 254.0976378,
-      "y": 141.8456693
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "53",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544135",
-      "x": 279.911811,
-      "y": 145.511811
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "54",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544136",
-      "x": 305.9149606,
-      "y": 150.8409449
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "55",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544137",
-      "x": 221.9716535,
-      "y": 166.1858268
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "56",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544138",
-      "x": 249.6755906,
-      "y": 168.3779528
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "57",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f43544139",
-      "x": 276.6992126,
-      "y": 168.3779528
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "58",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354413A",
-      "x": 303.7984252,
-      "y": 167.2440945
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "59",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354413B",
-      "x": 182.5511811,
-      "y": 69.61889764
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "60",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f4354413C",
-      "x": 148.1952756,
-      "y": 139.3133858
-    },
-    {
-      "verdieping": "-1",
-      "octaid": "238",
-      "beaconid": "e2c56db5-dffb-48d2-b060-d04f435441EE",
-      "x": 47.35748031,
-      "y": 182.9669291
+      "verdieping": "-2",
+      "octaid": 237,
+      "beaconid": "e2c56db5-dffb-48d2-b060-d04f435441ED",
+      "x": 177.2825197,
+      "y": 107.2289764
     }
   ]
 }

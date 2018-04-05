@@ -46,7 +46,12 @@ public class CanvasView extends View {
         int width = getWidth();
         int height = getHeight();
 
-        canvas.drawCircle((float) (locationX / 491.3385827) * width, (float) (locationY / 226.7716535) * height, 3, locationPaint);
+        //normale afbeelding
+//        canvas.drawCircle((float) (locationX / 491.3385827) * width, (float) (locationY / 226.7716535) * height, 3, locationPaint);
+
+        //kleine afbeelding
+        canvas.drawCircle((float) (locationX / 193.9653543) * width, (float) (locationY / 147.9307087) * height, 3, locationPaint);
+
 
 //        canvas.rotate((float) -19.27, (float) 245.6692913, (float) 113.3858268);
 ////        // Zone 1
