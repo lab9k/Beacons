@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.android.beacontrilateration.utils.CanvasView;
+import com.example.android.beacontrilateration.utils.Kalman;
 import com.lemmingapex.trilateration.NonLinearLeastSquaresSolver;
 import com.lemmingapex.trilateration.TrilaterationFunction;
 
@@ -33,6 +34,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;

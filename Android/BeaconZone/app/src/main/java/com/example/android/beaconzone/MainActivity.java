@@ -37,6 +37,7 @@ public class MainActivity extends Activity implements BeaconConsumer {
     private HashMap<String, String[][]> zonesGrid = new HashMap<>();
     private HashMap<String, List<String>> triangulationZones = new HashMap<>();
     private HashMap<String, List<Double>> beaconsCoordinates = new HashMap<>();
+    private HashMap<String, List<Double>> drawZoneGrid = new HashMap<>();
     private String zone = "0";
 
     private Comparator<Beacon> comparator;
@@ -72,8 +73,6 @@ public class MainActivity extends Activity implements BeaconConsumer {
         }
 
         getInfoFromJson();
-
-
     }
 
     @Override
@@ -88,19 +87,22 @@ public class MainActivity extends Activity implements BeaconConsumer {
             @Override
             public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
                 if (beacons.size() > 0) {
-                    
+
                     List<Beacon> lijstBeacons = new ArrayList<>(beacons);
 
                     Collections.sort(lijstBeacons, comparator);
-                    if (beacons.size() > 2) {
+                    if (beacons.size() > 3) {
                         String b1 = lijstBeacons.get(0).getId1().toString().toLowerCase();
                         String b2 = lijstBeacons.get(1).getId1().toString().toLowerCase();
                         String b3 = lijstBeacons.get(2).getId1().toString().toLowerCase();
+                        String b4 = lijstBeacons.get(3).getId1().toString().toLowerCase();
 
                         if (!b1.isEmpty() && !b2.isEmpty() && !b3.isEmpty()) {
-                            checkZone(b1, b2, b3);
-                            if (!zone.equals("0"))
-                                calculateLocation(zone, lijstBeacons);
+                            String tempZone = checkZone(b1, b2, b3, b4);
+                            if (!tempZone.equals("0")) {
+                                drawZone(tempZone);
+                                calculateLocation(tempZone, lijstBeacons);
+                            }
                         } else {
                             runOnUiThread(new Runnable() {
                                 @Override
@@ -115,7 +117,6 @@ public class MainActivity extends Activity implements BeaconConsumer {
                         @Override
                         public void run() {
                             Toast.makeText(MainActivity.this, "Geen beacons gevonden", Toast.LENGTH_LONG).show();
-
                         }
                     });
                 }
@@ -128,23 +129,34 @@ public class MainActivity extends Activity implements BeaconConsumer {
         }
     }
 
-    private void checkZone(String b1, String b2, String b3) {
+    private String checkZone(String b1, String b2, String b3, String b4) {
         for (Map.Entry<String, String[][]> entry : zonesGrid.entrySet()) {
             String key = entry.getKey();
             String[][] zoneGrid = entry.getValue();
             for (String[] t : zoneGrid) {
-                if ((b1.equals(t[0]) && b2.equals(t[1]) && b3.equals(t[2])) || (b1.equals(t[0]) && b2.equals(t[1]) && b3.equals(t[3]))) {
-                    if (!zone.equals(key)) {
-                        zone = key;
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Toast.makeText(MainActivity.this, zone, Toast.LENGTH_LONG).show();
-                            }
-                        });
-                    }
+                if ((b1.equals(t[0]) && b2.equals(t[1]) && b3.equals(t[2])) || (b1.equals(t[0]) && b2.equals(t[1]) && b4.equals(t[2]))) {
+                    return key;
                 }
             }
+        }
+        return "0";
+    }
+
+    private void drawZone(final String tempZone) {
+        if (!zone.equals(tempZone)) {
+            zone = tempZone;
+            final List<Double> coordinates = drawZoneGrid.get(tempZone);
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    double left = coordinates.get(0);
+                    double top = coordinates.get(1);
+                    double right = coordinates.get(2);
+                    double bottom = coordinates.get(3);
+
+                    canvasView.drawZone(left, top, right, bottom);
+                }
+            });
         }
     }
 
@@ -171,15 +183,15 @@ public class MainActivity extends Activity implements BeaconConsumer {
         double[] distances;
         if (triangulation.size() == 4) {
             positions = new double[][]{{x.get(0), y.get(0)}, {x.get(1), y.get(1)}, {x.get(2), y.get(2)}, {x.get(3), y.get(3)}};
-            distances = new double[]{distance.get(0) * 3.7795275590551,
-                    (distance.get(1) * 3.7795275590551),
-                    (distance.get(2) * 3.7795275590551),
-                    (distance.get(3) * 3.7795275590551)};
+            distances = new double[]{distance.get(0) * 3.779528,
+                    (distance.get(1) * 3.779528),
+                    (distance.get(2) * 3.779528),
+                    (distance.get(3) * 3.779528)};
         } else {
             positions = new double[][]{{x.get(0), y.get(0)}, {x.get(1), y.get(1)}, {x.get(2), y.get(2)}};
-            distances = new double[]{distance.get(0) * 3.7795275590551,
-                    (distance.get(1) * 3.7795275590551),
-                    (distance.get(2) * 3.7795275590551)};
+            distances = new double[]{distance.get(0) * 3.779528,
+                    (distance.get(1) * 3.779528),
+                    (distance.get(2) * 3.779528)};
         }
         NonLinearLeastSquaresSolver solver = new NonLinearLeastSquaresSolver(new TrilaterationFunction(positions, distances), new LevenbergMarquardtOptimizer());
         LeastSquaresOptimizer.Optimum optimum = solver.solve();
@@ -203,6 +215,7 @@ public class MainActivity extends Activity implements BeaconConsumer {
                 JSONObject jsonObject = beaconsArray.getJSONObject(i);
                 String zone = jsonObject.getString("zone");
                 JSONArray zones = jsonObject.getJSONArray("zones");
+                JSONArray drawZone = jsonObject.getJSONArray("drawZone");
                 JSONArray triangulation = jsonObject.getJSONArray("triangulation");
                 for (int j = 0; j < zones.length(); j++) {
                     JSONArray ob = zones.getJSONObject(j).getJSONArray("beacons");
@@ -213,10 +226,15 @@ public class MainActivity extends Activity implements BeaconConsumer {
 
                     zonesGrid.put(zone, temp);
                 }
+                List<Double> tempDraw = new ArrayList<>();
+                for (int k = 0; k < drawZone.length(); k++) {
+                    tempDraw.add(drawZone.getDouble(k));
+                }
+                drawZoneGrid.put(zone, tempDraw);
 
                 List<String> temp = new ArrayList<>();
-                for (int k = 0; k < triangulation.length(); k++) {
-                    temp.add("e2c56db5-dffb-48d2-b060-d04f435441" + triangulation.getString(k).toLowerCase());
+                for (int l = 0; l < triangulation.length(); l++) {
+                    temp.add("e2c56db5-dffb-48d2-b060-d04f435441" + triangulation.getString(l).toLowerCase());
                 }
                 triangulationZones.put(zone, temp);
             }
