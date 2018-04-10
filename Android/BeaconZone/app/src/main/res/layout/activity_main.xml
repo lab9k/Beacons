@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/verdiep_min_1_klein">
+    android:background="@drawable/verdieping_min_1_recht_klein">
 
     <com.example.android.beaconzone.utils.CanvasView
         android:id="@+id/canvas"
