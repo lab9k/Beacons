@@ -1,0 +1,22 @@
+
+.content {
+  padding-top: 70px;
+}
+
+.borderIt {
+  border: 1px solid red;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ui.selection.dropdown.active, .ui.selection.dropdown.visible {
+  z-index: 9999;
+}
