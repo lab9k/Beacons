@@ -27,6 +27,7 @@ class VerdiepMin2Controller: UITableViewController, CLLocationManagerDelegate  {
         }
     }
     
+
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         if let beacon = beacons.first {
             if(beacon.rssi != 0){
