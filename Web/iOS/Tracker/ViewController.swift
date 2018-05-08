@@ -96,7 +96,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
             counter += 1;
             if(endDate! >= Date()){
-                if(counter < 5000) {
+                if(counter < 1000) {
                     if let beacon = beacons.first {
                         if(beacon.rssi != 0){
                             for row in 0..<self.beacons.count {
@@ -110,11 +110,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     if buttonState == 1 {
                         let filteredbeacons = self.beacons.filter { $0.rssi != 0}
                         if filteredbeacons.count > 0 {
+                            print("push")
                             for beacon in self.beacons {
                                 if(beacon.rssi != 0){
                                     self.ref.child(deviceName.text!).child(beacon.id).setValue(["RSSI": beacon.rssi])
                                 }
                             }
+                            resetBeacons()
                         }else{
                             let state = UIApplication.shared.applicationState
                             if !alreadySendNotification && state == .background {
@@ -124,7 +126,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                             }
                         }
                     }
-                    resetBeacons()
                     counter = 0;
                 }
             }else{
@@ -158,8 +159,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     private func sendNotification(){
         let notification = UNMutableNotificationContent()
-        //notification.title = "Danger Will Robinson"
-        //notification.subtitle = "Something This Way Comes"
         notification.body = "Je bent niet (meer) in de bibliotheek, toch word je locatie nogsteeds gevolgd. Stop de tracking om batterij te sparen."
         let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
         let request = UNNotificationRequest(identifier: "notification", content: notification, trigger: notificationTrigger)

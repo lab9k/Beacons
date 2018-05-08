@@ -27,6 +27,19 @@ export class List extends React.Component {
                 this.forceUpdate();
             })
         })
+        this.database.on('child_removed', snap => {
+            for(var i = previewDevices.length - 1; i >= 0; i--) {
+                if(previewDevices[i].value === snap.key) {
+                   previewDevices.splice(i, 1);
+                   if(this.state.activeItem === snap.key){
+                        this.props.handleChangeDevice({name: null, beacons: null});
+                   }
+                }
+                this.setState({
+                    devices: previewDevices
+                })
+            }
+        })
         this.handleFirebase();
     }
 
@@ -34,14 +47,16 @@ export class List extends React.Component {
         this.database.on('child_added', snap => {            
             var obj = this.state.devices.find(d => d.value === snap.key)
             obj.beacons = snap.val();
+            if(obj.value === this.state.activeItem){
+                this.props.handleChangeDevice({name: obj.value,  beacons: obj.beacons});
+            }
         })
-        this.database.on('child_removed', snap => {
-            var obj = this.state.devices.find(d => d.value === snap.key)
-            obj.beacons = snap.val();
-        }) 
         this.database.on('child_changed', snap => {            
             var obj = this.state.devices.find(d => d.value === snap.key)
             obj.beacons = snap.val();
+            if(obj.value === this.state.activeItem){
+                this.props.handleChangeDevice({name: obj.value,  beacons: obj.beacons});
+            }
         })
     }
 

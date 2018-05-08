@@ -47,34 +47,6 @@ export class Map extends React.Component {
         this.configCanvas();
     }
 
-    handleFirebase(){
-        var database = this.props.firebase.database().ref().child(this.device);
-        database.on('child_added', snap => {
-            var obj = this.beacons.find(b => b.id === parseInt(snap.key, 16))
-            if(obj){
-                obj.rssi = snap.val().RSSI
-                this.configCanvas();
-                this.calcClosestBeacon();
-            }
-        }) 
-        database.on('child_removed', snap => {
-            var obj = this.beacons.find(b => b.id === parseInt(snap.key, 16))
-            if(obj){
-                obj.rssi = Number.MIN_SAFE_INTEGER
-                this.configCanvas();
-                this.calcClosestBeacon();
-            }
-        }) 
-        database.on('child_changed', snap => {            
-            var obj = this.beacons.find(b => b.id === parseInt(snap.key, 16))
-            if(obj){
-                obj.rssi = snap.val().RSSI 
-                this.configCanvas();
-                this.calcClosestBeacon();
-            }
-        })
-    }
-
     handleOnLoadAndResize() {
         this.setState({
             verdiep_height: this.refs.verdiep.clientHeight,
@@ -106,15 +78,6 @@ export class Map extends React.Component {
         canvas.style.top = img.offsetTop + "px"; 
 
     }
-    /* used for dev */
-    handleOnClick(event){
-        var rect = this.refs.canvas.getBoundingClientRect();
-        var x = event.clientX - rect.left;
-        var y = event.clientY - rect.top;    
-        console.log("x:" + x + ", y:" + y);
-        this.drawBeacon(x,y, 3, "BLUE")
-    }
-
     /* compares 2 beacons with the rssi signal */ 
     compare(a, b){
         if(a.rssi < b.rssi){
@@ -213,29 +176,32 @@ export class Map extends React.Component {
             ctx.fillStyle = "#ea8e15"
         }else if(color === "GREEN"){
             ctx.fillStyle = "#2bc41d";
-        }else if(color === "BLUE"){
-            ctx.fillStyle = "#4286f4";
         }
         ctx.beginPath();
         ctx.arc(x, y, size, 0, Math.PI * 2, true);
         ctx.fill();
     }
-    
+
     componentWillReceiveProps(nextProps){
         var device = nextProps.device
         if(device){
-            this.device = device.name;
-            this.resetBeacons();
-            for (var key in device.beacons) {
-                // eslint-disable-next-line
-                var obj = this.beacons.find(b => b.id === parseInt(key, 16))
-                if(obj){
-                    obj.rssi = device.beacons[key]['RSSI']
+            if(device.name && device.beacons){
+                this.device = device.name;
+                this.resetBeacons();
+                for (var key in device.beacons) {
+                    // eslint-disable-next-line
+                    var obj = this.beacons.find(b => b.id === parseInt(key, 16))
+                    if(obj){
+                        obj.rssi = device.beacons[key]['RSSI']
+                    }
                 }
+                this.configCanvas();
+                this.calcClosestBeacon();
+            }else{
+                this.setState({
+                    active: true
+                })
             }
-            this.configCanvas();
-            this.calcClosestBeacon();
-            this.handleFirebase();
         }
     }
 
@@ -264,7 +230,6 @@ export class Map extends React.Component {
                             <h3 class="ui blue header">{this.state.verdiep}</h3>
                             <canvas 
                             ref="canvas" 
-                            onClick={this.handleOnClick.bind(this)}
                             width="0" 
                             height="0">
                             </canvas>
