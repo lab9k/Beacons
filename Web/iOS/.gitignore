@@ -23,5 +23,4 @@ DerivedData/
 !default.perspectivev3
 
 ## ignore googleService
-
 Tracker/GoogleService-Info.plist
