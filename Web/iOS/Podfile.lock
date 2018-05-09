@@ -1,7 +1,4 @@
 PODS:
-  - ChameleonFramework/Default (2.1.0)
-  - ChameleonFramework/Swift (2.1.0):
-    - ChameleonFramework/Default
   - Firebase/Core (4.10.0):
     - FirebaseAnalytics (= 4.1.0)
     - FirebaseCore (= 4.0.16)
@@ -32,7 +29,6 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
-  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - Firebase/Database
 
 SPEC REPOS:
@@ -46,17 +42,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
 
-EXTERNAL SOURCES:
-  ChameleonFramework:
-    :git: https://github.com/ViccAlexander/Chameleon.git
-
-CHECKOUT OPTIONS:
-  ChameleonFramework:
-    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
-    :git: https://github.com/ViccAlexander/Chameleon.git
-
 SPEC CHECKSUMS:
-  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Firebase: c98c8b1fbcbdccd82539a36c2b17a9b1bb0ee798
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseCore: eb9e1a56733ff1094ecf3e28af9069c344b25239
@@ -66,6 +52,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 09bb5b9094efd799beda2fb154507ae17ffac8c1
+PODFILE CHECKSUM: 1e592b396531a745b85b5bbdec65154a452bf0fe
 
 COCOAPODS: 1.5.0
