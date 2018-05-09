@@ -7,7 +7,6 @@ import verdiep_2 from '../images/verdiep_2.png';
 import verdiep_3 from '../images/verdiep_3.png';
 import beacons from '../data/beacons.json';
 import { Dimmer } from 'semantic-ui-react'
-import 'firebase/database';
 
 export class Beacon {
     constructor(id, x,  y){

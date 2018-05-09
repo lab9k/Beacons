@@ -48,8 +48,8 @@
                                 </constraints>
                                 <segments>
                                     <segment title="1 uur"/>
-                                    <segment title="24 uur"/>
-                                    <segment title="altijd"/>
+                                    <segment title="3 uur"/>
+                                    <segment title="Zolang aanwezig"/>
                                 </segments>
                                 <color key="tintColor" red="0.0010697750839999999" green="0.3942882419" blue="0.76402187349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
@@ -61,7 +61,7 @@
                                     <constraint firstAttribute="height" constant="30" id="znh-vJ-ikN"/>
                                 </constraints>
                                 <color key="tintColor" red="0.0010697750839999999" green="0.3942882419" blue="0.76402187349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Start Tracking">
+                                <state key="normal" title="Start tracking">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>

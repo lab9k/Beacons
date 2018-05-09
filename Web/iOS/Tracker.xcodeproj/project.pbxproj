@@ -148,6 +148,9 @@
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = nl;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 3F551A422099C003006DF07E;
 			productRefGroup = 3F551A4C2099C003006DF07E /* Products */;
 			projectDirPath = "";

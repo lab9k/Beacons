@@ -23,7 +23,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var counter = 0;
     var endDate: Date?
     var buttonState = 0;
-    var alreadySendNotification = false;
+    var alreadySendAlert = false;
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func startTracking() {
         if buttonState == 0 {
             buttonState = 1
-            button.setTitle("Stop Tracking", for: .normal)
+            button.setTitle("Stop tracking", for: .normal)
             deviceName.isEnabled = false;
             segment.isEnabled = false;
             if segment.selectedSegmentIndex == 0 {
@@ -55,8 +56,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     to: Date())
             }else if segment.selectedSegmentIndex == 1 {
                 endDate = Calendar.current.date(
-                    byAdding: .day,
-                    value: +1,
+                    byAdding: .hour,
+                    value: +3,
                     to: Date())
             }else if segment.selectedSegmentIndex == 2 {
                 endDate = Calendar.current.date(
@@ -69,14 +70,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 locationManager.startRangingBeacons(in: beacon.region);
             }
         }else{
-            buttonState = 0
-            button.setTitle("Start Tracking", for: .normal)
-            deviceName.isEnabled = true;
-            segment.isEnabled = true;
-            locationManager.stopUpdatingLocation()
-            for beacon in beacons {
-                locationManager.stopRangingBeacons(in: beacon.region)
-            }
+            stopTracking()
             ref.child(deviceName.text!).removeValue()
         }
     }
@@ -109,36 +103,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 }else{
                     if buttonState == 1 {
                         let filteredbeacons = self.beacons.filter { $0.rssi != 0}
-                        if filteredbeacons.count > 0 {
-                            print("push")
-                            for beacon in self.beacons {
-                                if(beacon.rssi != 0){
-                                    self.ref.child(deviceName.text!).child(beacon.id).setValue(["RSSI": beacon.rssi])
+                        if filteredbeacons.count == 0 {
+                            print("no beacons found")
+                                if(segment.selectedSegmentIndex == 2){
+                                    print("'Zolang aanwezig' was selected")
+                                    sendNotification()
+                                    ref.child(deviceName.text!).removeValue()
+                                    stopTracking()
                                 }
-                            }
-                            resetBeacons()
                         }else{
-                            let state = UIApplication.shared.applicationState
-                            if !alreadySendNotification && state == .background {
-                                print("gonna send notification")
-                                sendNotification()
-                                alreadySendNotification = true;
+                            //print("Push to firebase")
+                            for beacon in filteredbeacons {
+                                self.ref.child(deviceName.text!).child(beacon.id).setValue(["RSSI": beacon.rssi])
+                                print("Push to firebase with rssi:", beacon.rssi)
                             }
                         }
+                        resetBeacons()
+                        counter = 0;
                     }
-                    counter = 0;
                 }
             }else{
                 ref.child(deviceName.text!).removeValue()
-                print("date ended")
-                locationManager.stopUpdatingLocation()
-                for beacon in self.beacons {
-                    locationManager.stopRangingBeacons(in: beacon.region)
-                }
-                buttonState = 0
-                button.setTitle("Start Tracking", for: .normal)
-                deviceName.isEnabled = true;
-                segment.isEnabled = true;
+                print("date ended, stop tracking")
+                stopTracking()
             }
     }
     
@@ -159,10 +146,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     private func sendNotification(){
         let notification = UNMutableNotificationContent()
-        notification.body = "Je bent niet (meer) in de bibliotheek, toch word je locatie nogsteeds gevolgd. Stop de tracking om batterij te sparen."
+        notification.body = "Je bent niet (meer) in de bibliotheek, daarom is de app gestopt je te volgen. "
         let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
         let request = UNNotificationRequest(identifier: "notification", content: notification, trigger: notificationTrigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+    
+    private func stopTracking(){
+        print("stopped tracking")
+        locationManager.stopUpdatingLocation()
+        for beacon in self.beacons {
+            locationManager.stopRangingBeacons(in: beacon.region)
+        }
+        buttonState = 0
+        button.setTitle("Start tracking", for: .normal)
+        deviceName.isEnabled = true;
+        segment.isEnabled = true;
+    }
+    
+    @objc func update() {
+        print("no beacons found after 5sec")
     }
     
 }

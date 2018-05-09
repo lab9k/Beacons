@@ -43,14 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-        if let viewControllers = self.window?.rootViewController?.childViewControllers {
-            for viewController in viewControllers {
-                if viewController.isKind(of: ViewController.self) {
-                    let vc = viewController as! ViewController
-                    vc.alreadySendNotification = false;
-                }
-            }
-        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
