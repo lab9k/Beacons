@@ -226,7 +226,7 @@ export class Map extends React.Component {
                             width="0"
                             height="0"
                             ref="wrapper">
-                            <h3 class="ui blue header">{this.state.verdiep}</h3>
+                            <h3 className="ui blue header">{this.state.verdiep}</h3>
                             <canvas 
                             ref="canvas" 
                             width="0" 

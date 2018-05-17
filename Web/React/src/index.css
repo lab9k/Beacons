@@ -20,3 +20,7 @@
 .ui.selection.dropdown.active, .ui.selection.dropdown.visible {
   z-index: 9999;
 }
+
+.imageGrid img{
+  height: 40px;
+}

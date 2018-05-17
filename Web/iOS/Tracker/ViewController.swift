@@ -16,6 +16,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var deviceName: UITextField!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var segment: UISegmentedControl!
+    @IBOutlet weak var text: UILabel!
     
     var beacons : [Beacon] = [];
     var ref: DatabaseReference!
@@ -90,8 +91,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
             counter += 1;
             if(endDate! >= Date()){
-                if(counter < 1000) {
+                if(counter < 3000) {
                     if let beacon = beacons.first {
+                        stopTimer()
                         if(beacon.rssi != 0){
                             for row in 0..<self.beacons.count {
                                 if(self.beacons[row].region.proximityUUID.uuidString == beacon.proximityUUID.uuidString){
@@ -107,18 +109,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                             print("no beacons found")
                                 if(segment.selectedSegmentIndex == 2){
                                     print("'Zolang aanwezig' was selected")
-                                    sendNotification()
-                                    ref.child(deviceName.text!).removeValue()
-                                    stopTracking()
+                                    timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(self.update), userInfo: nil, repeats: false)
                                 }
                         }else{
-                            //print("Push to firebase")
+                            print("Push to firebase")
+                            stopTimer()
                             for beacon in filteredbeacons {
                                 self.ref.child(deviceName.text!).child(beacon.id).setValue(["RSSI": beacon.rssi])
                                 print("Push to firebase with rssi:", beacon.rssi)
+                                beacon.rssi = 0
                             }
+                            text.text = "Last updated on \(Date())."
                         }
-                        resetBeacons()
                         counter = 0;
                     }
                 }
@@ -164,8 +166,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         segment.isEnabled = true;
     }
     
+    private func stopTimer(){
+        timer?.invalidate()
+        timer = nil
+    }
+    
     @objc func update() {
-        print("no beacons found after 5sec")
+        print("update modus")
+        if timer != nil {
+        print("stop modus")
+        text.text = "Stopped tracking"
+        ref.child(deviceName.text!).removeValue()
+        stopTracking()
+        }
     }
     
 }

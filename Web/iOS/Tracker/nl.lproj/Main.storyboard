@@ -111,6 +111,12 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="700" id="ygl-zr-BHM"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOc-xH-pJk">
+                                <rect key="frame" x="491" y="226" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -125,6 +131,7 @@
                             <constraint firstItem="dB3-9P-mlw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JN8-yt-knf"/>
                             <constraint firstItem="xrJ-JK-Ajy" firstAttribute="leading" secondItem="dB3-9P-mlw" secondAttribute="leading" id="K2x-zC-5yk"/>
                             <constraint firstItem="Be9-vQ-GGm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mcu-Eq-HnD"/>
+                            <constraint firstItem="sOc-xH-pJk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YNP-iJ-1bk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xrJ-JK-Ajy" secondAttribute="trailing" priority="750" constant="16" id="YhN-ni-Zq7"/>
                             <constraint firstItem="dB3-9P-mlw" firstAttribute="top" secondItem="Xyx-YE-H6T" secondAttribute="bottom" constant="16" id="ZI7-me-I3l"/>
                             <constraint firstItem="Be9-vQ-GGm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="750" constant="16" id="boA-Ow-yGe"/>
@@ -147,11 +154,12 @@
                         <outlet property="button" destination="dB3-9P-mlw" id="MS9-yD-rRF"/>
                         <outlet property="deviceName" destination="Be9-vQ-GGm" id="d5X-B2-9h2"/>
                         <outlet property="segment" destination="Xyx-YE-H6T" id="Ah8-re-76x"/>
+                        <outlet property="text" destination="sOc-xH-pJk" id="cKZ-40-8jM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074.4000000000001" y="131.78410794602701"/>
+            <point key="canvasLocation" x="1074.0234375" y="131.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fmy-A3-rh4">
