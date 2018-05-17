@@ -51,18 +51,21 @@ class App extends Component {
             </Grid.Column>
             <Grid.Column width={13} only='tablet computer'>
               <Map device={this.state.device} firebase={this.db}></Map>
+              <div className='imageGrid'>
+              <a rel="noopener noreferrer" href='https://lab9k.github.io' target='_blank'><img src={lab9k} alt='lab9k'/></a>
+              <a rel="noopener noreferrer" href='https://www.digipolis.be' target='_blank'><img src={digipolis} alt='lab9k'/></a>
+              <a rel="noopener noreferrer" href='http://dekrook.be' target='_blank'><img src={dekrook} alt='lab9k'/></a>
+              </div>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
           <Grid.Column width={16} only='mobile'>
               <Map device={this.state.device} firebase={this.db}></Map>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-          <Grid.Column width={16} className='imageGrid'>
-                <img src={lab9k} alt='lab9k'/>
-                <img src={digipolis} alt='lab9k'/>
-                <img src={dekrook} alt='lab9k'/>
+              <div className='imageGrid'>
+              <a rel="noopener noreferrer" href='https://lab9k.github.io' target='_blank'><img src={lab9k} alt='lab9k'/></a>
+              <a rel="noopener noreferrer" href='https://www.digipolis.be' target='_blank'><img src={digipolis} alt='lab9k'/></a>
+              <a rel="noopener noreferrer" href='http://dekrook.be' target='_blank'><img src={dekrook} alt='lab9k'/></a>
+              </div>
             </Grid.Column>
           </Grid.Row>
         </Grid> 

@@ -21,6 +21,11 @@
   z-index: 9999;
 }
 
+.imageGrid {
+  padding-right: 30px;
+}
+
 .imageGrid img{
   height: 40px;
+  float: right;
 }

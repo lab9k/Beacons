@@ -2,7 +2,7 @@
   "name": "beaconreact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lab9k.github.io/ESPBibTracker",
+  "homepage": "http://lab9k.github.io/Bibliocation",
   "dependencies": {
     "firebase": "^4.12.1",
     "font-awesome": "^4.7.0",
