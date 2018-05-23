@@ -1,7 +1,8 @@
 # iOS Beacon finder with firebase backend
-The iOS application finds beacon in De Krook and send it to a firebase backend. You can view the location of the Apple Device with the [React webapplication](https://github.com/lab9k/Beacons/tree/master/Web/React). You can let your Apple device track for 1 hour, 3 hours or as long as you in the library. 
+Apple toestellen kunnen gevolgd worden in de bibliotheek door dit project. Een toestel kan gevolgd worden voor 1 uur, 3 uur of zolang aanwezig in de bibliotheek. 
 
-### Config iOS
-1. The application runs with [cocoapods](https://cocoapods.org). `pod install` will install the dependencies.
-2. Add an iOS application in your firebase project. 
-3. Follow the steps on firebase to finalize your application.
+### Configureer iOS project
+1. De applicatie maakt gebruik van [cocoapods](https://cocoapods.org). `pod install` zal alle nodige dependencies installeren.
+2. Maak een nieuw, of gebruik een bestaand Firebase project.
+2. Voeg een nieuwe iOS applicatie toe in de [Firebase console](https://console.firebase.google.com/) van uw project.
+3. Volg de stappen die Firebase geeft om de installatie af te ronden. 
