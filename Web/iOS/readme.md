@@ -1,4 +1,4 @@
-# iOS Beacon finder with firebase backend
+# iOS Tracking
 Apple toestellen kunnen gevolgd worden in de bibliotheek door dit project. Een toestel kan gevolgd worden voor 1 uur, 3 uur of zolang aanwezig in de bibliotheek. 
 
 ### Configureer iOS project
