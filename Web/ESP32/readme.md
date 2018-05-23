@@ -20,7 +20,7 @@ eeprom, data, 0x99, 0x390000,0x1000,
 spiffs, data, spiffs, 0x391000,0x6F000,
 ```  
 4. Open `esp32/board.txt` met een text-editor
-5. Verander volgende lijnen in het bestand: 
+5. Verander volgende lijnen in het bestand:  
     `esp32.upload.maximum_size=1310720` naar `esp32.upload.maximum_size=1835008`  
     `esp32doit-devkit-v1.upload.maximum_size=1310720` naar `esp32doit-devkit-v1.upload.maximum_size=13107201835008`
 6. Sla het bestand op en herstart de Arduino IDE
@@ -29,7 +29,7 @@ spiffs, data, spiffs, 0x391000,0x6F000,
 
 1. Maak een nieuw, of gebruik een bestaand Firebase project.
 2. Open het [programmabestand](https://github.com/lab9k/Beacons/blob/master/Web/ESP32/beaconFirebase/beaconFirebase.ino) met Arduino IDE. 
-3. Verander de `firebaseLink` naar de URL van uw Firebase project. (meestal `https://[applicatienaam.firebaseio.com`)
+3. Verander de `firebaseLink` naar de URL van uw Firebase project. (meestal `https://[applicatienaam].firebaseio.com`)
 4. Verander de WIFI instellingen naar die van de bibliotheek. 
 
 
