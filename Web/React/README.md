@@ -1,7 +1,9 @@
-# React tracker 
-React webapplication to track [ESP32's](https://github.com/lab9k/Beacons/tree/master/Web/ESP32), [Apple devices](https://github.com/lab9k/Beacons/tree/master/Web/iOS) and Android devices. Uses Firebase as backend. View the livedemo [here](https://lab9k.github.io/ESPBibTracker).
-### Config firebase 
-1. Go to firebase and copy everything between the config variables 
+# React webapplicatie
+React frontend webapplicatie om toestellen te volgen binnen de bibliotheek. Per toestel kan gekeken worden waar een toestel zich ongeveer bevindt in de bibliotheek. Een voorbeeld vindt u [hier](https://lab9k.github.io/Bibliocation/).
+
+### Installatie
+1. Maak een nieuw, of gebruik een bestaand Firebase project.
+2. Voeg een nieuwe webapp toe in de [Firebase console](https://console.firebase.google.com/) van uw project.
 ![Example](https://github.com/lab9k/Beacons/blob/master/Web/React/example.png)
-2. Paste the config in [config.js](https://github.com/lab9k/Beacons/blob/master/Web/React/src/config/config.js).
-3. Your app is ready to go. the command `npm start` will start the app.
+3. Kopieer de config gegevens naar [config.js](https://github.com/lab9k/Beacons/blob/master/Web/React/src/config/config.js).
+4. De applicatie is configureerd. Gebruik het command `npm start` om de webapplicatie te starten. 
