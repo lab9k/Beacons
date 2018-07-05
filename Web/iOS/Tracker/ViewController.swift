@@ -16,7 +16,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var deviceName: UITextField!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var segment: UISegmentedControl!
-    @IBOutlet weak var text: UILabel!
     
     var beacons : [Beacon] = [];
     var ref: DatabaseReference!
@@ -26,6 +25,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var buttonState = 0;
     var alreadySendAlert = false;
     var timer: Timer?
+    var clickTimes = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +41,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
         deviceName.placeholder = UIDevice.current.name
         deviceName.autocapitalizationType = .words
+        deviceName.addTarget(self, action: #selector(clickFunction), for: UIControlEvents.touchDown)
+        
     }
-
     
     @IBAction func startTracking() {
         if buttonState == 0 {
@@ -119,7 +120,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                                 print("Push to firebase with rssi:", beacon.rssi)
                                 beacon.rssi = 0
                             }
-                            text.text = "Last updated on \(Date())."
                         }
                         counter = 0;
                     }
@@ -175,9 +175,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         print("update modus")
         if timer != nil {
         print("stop modus")
-        text.text = "Stopped tracking"
         ref.child(deviceName.text!).removeValue()
         stopTracking()
+        }
+    }
+    
+    @objc func clickFunction(textField: UITextField) {
+        clickTimes += 1;
+        if clickTimes == 2 {
+            clickTimes = 0;
+            deviceName.text = UIDevice.current.name
         }
     }
     
